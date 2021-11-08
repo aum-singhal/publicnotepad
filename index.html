@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public NotePad</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- ========================== NavBar ========================== -->
+    <nav>
+        <div id="logo"><em>Public</em> NotePad</div>
+    </nav>
+    <!-- ========================== NavBar Ends ===================== -->
+
+    <!-- =========================== Main Body =========================== -->
+    <div class="main-body" id="main-body">
+        <div class="add-note">
+            <button onclick="shfunction()">Add Your Note!</button>
+        </div>
+
+        <form action="./index.html" method="post" id="card-form">
+            <div class="feild">
+                <label for="">Title</label>
+                <br>
+                <input type="text" name="title" id="title" placeholder="add a title for your note">
+            </div>
+            <div class="feild">
+                <label for="">Content</label>
+                <br>
+                <textarea name="content" id="content" cols="30" rows="10"  placeholder="add your note. Remember to add <br> for adding new line"></textarea>
+            </div>
+            <div class="feild">
+                <button type="submit">Add</button>
+            </div>
+        </form>
+
+        <div id="contents"></div>
+    </div>
+    <!-- =========================== Main Body Ends ====================== -->
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
