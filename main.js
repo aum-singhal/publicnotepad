@@ -26,7 +26,7 @@ f.addEventListener('submit', (event) => {
     var content = f.elements['content'].value;
     var temp = [{
         title : title,
-        content : content
+        content : content.replace(/\n\r?/g, '<br />')
     }];
     temp.push(...contents);
     contents = temp;
@@ -48,12 +48,9 @@ function showcards(c){
 
 
 function createCard(c){
-    const card = document.createElement('div');
-    card.className = "card";
     var temp = `
     <div class="card">
         <div class="title">${c.title}</div>
-        <br>
         <div class="cont">${c.content}</div>
     </div>`;
     return temp;
