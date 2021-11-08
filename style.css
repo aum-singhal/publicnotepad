@@ -37,11 +37,11 @@ nav > #logo {
     padding: 0.5em;
 }
 
-button:hover{
+/* button:hover{
     cursor: pointer;
     transform: scale(1.03);
     transition: 0.2s ease-in-out;
-}
+} */
 
 
 #card-form{
